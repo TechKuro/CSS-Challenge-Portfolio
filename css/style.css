@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+
 }
 
 h1,
@@ -20,4 +21,48 @@ h6 {
 
 p {
   margin: 0;
+}
+
+#navbar {
+  display: flex;
+  direction: row;
+  margin: 0;
+  background-color: #36433a;
+  width: 100%;
+}
+
+#navMenu {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+  justify-content: space-around;
+  width: 50%;
+  font-size: 20px;
+  min-height: 300px;
+}
+
+#navMenu a {
+  text-decoration: none;
+  color: white;
+}
+
+.image-card {
+  background-color: yellow;
+ 
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+.photo {
+  background-image: url(../images/ever.jpg);
+  width: 33%;
+  height: 400px;
+  justify-content: flex-start;
+
+}
+.info {
+  justify-content: flex-end;
 }
