@@ -91,7 +91,7 @@ h1 {
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "about-me test"
-    "work test";
+    "test test";
 }
 
 .page-section{
