@@ -87,11 +87,20 @@ h1 {
 
 .page-wrapper {
 
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: none
+  grid-template-areas:
     "about-me test"
-    "work test"
+    "work test";
+}
+
+.page-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-area: "work project1 project2";
+
+
 }
 #about {
   display: grid;
@@ -100,6 +109,7 @@ h1 {
 #about-me {
 
   grid-area: about-me;
+
 }
 
 #test {
@@ -110,4 +120,11 @@ h1 {
 
   grid-area: work;
 }
-/*set the grid on the section id */
+
+#project1{
+  grid-area: project1;
+}
+
+#project2{
+  grid-area: project2;
+}
