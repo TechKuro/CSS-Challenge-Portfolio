@@ -98,8 +98,8 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "work project1 project2"
-  "project1 project2";
+  grid-template-areas: "project1 work project2"
+  "project1 project2 work";
 
 
 }
