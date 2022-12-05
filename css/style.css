@@ -52,7 +52,7 @@ h1 {
   margin-top: 5%;
 }
 
-.image-card {
+#image-card {
   position: absolute;
   width: 100%;
   top: 10%;
@@ -67,7 +67,7 @@ h1 {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  border-radius: 25px;
 }
 
-.photo {
+#photo {
   background-image: url(../images/ever.jpg);
   width: 80%;
   height: 400px;
@@ -75,7 +75,39 @@ h1 {
   display: inline-block;
 
 }
-.info {
+#info-section {
   display: flex;
   width: 100%;
 }
+
+#spacer {
+  min-height: 20em;
+}
+
+
+.page-wrapper {
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: none
+    "about-me test"
+    "work test"
+}
+#about {
+  display: grid;
+}
+
+#about-me {
+
+  grid-area: about-me;
+}
+
+#test {
+  grid-area: test;
+}
+
+#work {
+
+  grid-area: work;
+}
+/*set the grid on the section id */
