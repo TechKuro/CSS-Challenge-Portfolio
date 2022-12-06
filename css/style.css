@@ -22,6 +22,7 @@ h6 {
 h2 {
   margin: 0;
   text-align: right;
+  padding: 3% 5%;
 
 }
 
@@ -101,10 +102,9 @@ h1 {
 .two-grid {
   display: grid;
   grid-template-columns: 33% 66%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-areas:
-    "about-me test"
-    "about-me test2";
+    "about-me about-info";
 }
 
 .page-section {
@@ -112,10 +112,10 @@ h1 {
   grid-template-columns: 33% 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "work project1 project1"
-    "work project1 project1"
-    "work project2 project2"
-    "work project2 project2";
+    "work feature-project feature-project"
+    "work project2 project3"
+    "work project4 project5"
+    "work project4 project6";
 
 }
 
@@ -126,23 +126,21 @@ h1 {
   
 }
 
-#test1 {
-  grid-area: test1;
-  background-color: greenyellow;
+#about-info {
+  grid-area: about-info;
+  margin: 25px 15px;
+  padding-bottom: 8vh;
+  text-align: center ;
 }
 
-#test2 {
-  grid-area: test2;
-  background-color: orange;
-}
 
 #work-heading {
   grid-area: work;
   border-right: 2px solid green;
 }
 
-#project1 {
-  grid-area: project1;
+#feature-project {
+  grid-area: feature-project;
   background-image: url(../images/02-portfolio-2.jpg);
   height: 30vh;
   background-size:cover;
@@ -152,5 +150,10 @@ h1 {
 
 #project2 {
   grid-area: project2;
-  background-color: lightcoral;
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+#project3 {
+  grid-area: project3;
+  background-image: url(../images/02-portfolio-4.jpg);
 }
