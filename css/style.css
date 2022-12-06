@@ -103,7 +103,7 @@ h1 {
 
 .page-section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 33% 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "work project1 project1"
@@ -130,14 +130,18 @@ h1 {
   background-color: orange;
 }
 
-#work {
+#work-heading {
   grid-area: work;
-  background-color: pink;
+  border-right: 2px solid green;
 }
 
 #project1 {
   grid-area: project1;
-  background-color: lightblue;
+  background-image: url(../images/02-portfolio-2.jpg);
+  height: 30vh;
+  background-size:cover;
+  background-repeat: no-repeat;
+  
 }
 
 #project2 {
