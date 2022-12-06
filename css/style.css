@@ -38,7 +38,7 @@ h1 {
   justify-content: center;
   margin: auto;
 }
-
+/*  navbar created as flex element */
 #navbar {
   display: flex;
   direction: row;
@@ -46,7 +46,7 @@ h1 {
   background-color: #36433a;
   width: 100%;
 }
-
+/* nav menu styles*/
 #nav-menu {
   display: flex;
   align-items: flex-start;
@@ -62,6 +62,8 @@ h1 {
   color: white;
   margin-top: 5%;
 }
+
+/*image card styles - use these for positioning */
 
 #image-card {
   position: absolute;
@@ -89,6 +91,7 @@ h1 {
 
 }
 
+/*info section card*/
 
 #info-section {
   display: flex;
@@ -105,6 +108,7 @@ h1 {
   margin: 0 5%;
 }
 
+/* grids start here */
 
 .two-grid {
   display: grid;
@@ -140,6 +144,8 @@ h1 {
 .grid-area:hover {
   opacity: 0.3;
 }
+
+/* element styling for grid items*/
 
 #about-heading {
   grid-area: about-me;
@@ -212,6 +218,8 @@ h1 {
   justify-content: space-evenly;
   margin: 10px;
 }
+
+/* media queries */
 
 @media screen and (max-width: 950px) {
   #image-card {
