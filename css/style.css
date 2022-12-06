@@ -157,3 +157,20 @@ h1 {
   grid-area: project3;
   background-image: url(../images/02-portfolio-4.jpg);
 }
+
+#project4 {
+  grid-area: project4 ;
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+#project5 {
+  grid-area: project5;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+#project6 {
+  grid-area: project6;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
