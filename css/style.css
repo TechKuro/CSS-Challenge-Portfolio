@@ -85,47 +85,60 @@ h1 {
 }
 
 
-.page-wrapper {
 
-  grid-template-columns: 1fr 1fr;
+.page-wrapper {
+  background-color: lavender;
+  margin: 0 5%;
+}
+
+
+#about {
+  display: grid;
+  grid-template-columns: 33% 66%;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "about-me test"
-    "test test";
+    "about-me test2";
 }
 
-.page-section{
+.page-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "project1 work project2"
-  "project1 project2 work" "work work project1";
+  grid-template-areas:
+    "work work work"
+    "project1 project1 project1"
+    "project2 project2 project2";
 
-
-}
-#about {
-  display: grid;
 }
 
 #about-me {
-
   grid-area: about-me;
-
+  background-color: green;
+  
 }
 
-#test {
-  grid-area: test;
+#test1 {
+  grid-area: test1;
+  background-color: greenyellow;
+}
+
+#test2 {
+  grid-area: test2;
+  background-color: orange;
 }
 
 #work {
-
   grid-area: work;
+  background-color: pink;
 }
 
-#project1{
+#project1 {
   grid-area: project1;
+  background-color: lightblue;
 }
 
-#project2{
+#project2 {
   grid-area: project2;
+  background-color: lightcoral;
 }
