@@ -92,7 +92,7 @@ h1 {
 }
 
 
-#about {
+.two-grid {
   display: grid;
   grid-template-columns: 33% 66%;
   grid-template-rows: 1fr 1fr;
@@ -104,17 +104,19 @@ h1 {
 .page-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "work work work"
-    "project1 project1 project1"
-    "project2 project2 project2";
+    "work project1 project1"
+    "work project1 project1"
+    "work project2 project2"
+    "work project2 project2";
 
 }
 
 #about-me {
   grid-area: about-me;
-  background-color: green;
+  border-right: 2px solid green;
+
   
 }
 
