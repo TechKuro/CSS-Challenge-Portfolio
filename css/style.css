@@ -47,7 +47,7 @@ h1 {
   width: 100%;
 }
 
-#navMenu {
+#nav-menu {
   display: flex;
   align-items: flex-start;
   margin: 0 auto;
@@ -57,7 +57,7 @@ h1 {
   min-height: 300px;
 }
 
-#navMenu a {
+#nav-menu a {
   text-decoration: none;
   color: white;
   margin-top: 5%;
@@ -80,13 +80,15 @@ h1 {
 }
 
 #photo {
-  background-image: url(../images/ever.jpg);
+  background-image: url(../images/martin1.jpg);
   width: 80%;
   height: 400px;
   background-repeat: no-repeat;
   display: inline-block;
+  background-size: cover;
 
 }
+
 
 #info-section {
   display: flex;
@@ -123,17 +125,6 @@ h1 {
     "work project4 project6";
 }
 
-/* .contact-grid {
-  display: grid;
-  grid-template-columns: 20% 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-  "contact-heading contact-info";
-} */
-
-
-
-.heading {}
 
 .grid-area {
   background-position: center;
@@ -233,7 +224,34 @@ h1 {
     border-right: none;
     border-bottom: 2px solid green;
     text-align: center;
-    flex: 0 0 40%;
+    flex: 0 0 10%;
+    margin: auto;
+
+  }
+  #work-heading {
+    border-right: none;
+    border-bottom: 2px solid green;
+    text-align: center;
+    flex: 0 0 10%;
     margin: auto;
   }
+
+  .page-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "work"
+      "feature-project"
+      "project2"
+      "project3"
+      "project4"
+      "project5"
+      "project6";
+  }
+
+  #photo {
+    display: none;
+  }
 }
+
