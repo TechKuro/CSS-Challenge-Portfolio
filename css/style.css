@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  text-decoration:none ;
+  text-decoration: none;
 }
 
 h3,
@@ -31,12 +31,14 @@ h2 {
 p {
   margin: 0;
 }
+
 h1 {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
 }
+
 #navbar {
   display: flex;
   direction: row;
@@ -73,17 +75,19 @@ h1 {
   max-width: 50%;
   background-color: white;
   margin-left: 100px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  border-radius: 25px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 25px;
 }
 
 #photo {
   background-image: url(../images/ever.jpg);
   width: 80%;
   height: 400px;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   display: inline-block;
 
 }
+
 #info-section {
   display: flex;
   width: 100%;
@@ -119,20 +123,17 @@ h1 {
     "work project4 project6";
 }
 
-.contact-grid {
+/* .contact-grid {
   display: grid;
   grid-template-columns: 20% 1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
   "contact-heading contact-info";
-}
+} */
 
 
 
-.heading {
-  
-
-}
+.heading {}
 
 .grid-area {
   background-position: center;
@@ -150,14 +151,14 @@ h1 {
   grid-area: about-me;
   border-right: 2px solid green;
 
-  
+
 }
 
 #about-info {
   grid-area: about-info;
   margin: 25px 5px;
   padding-bottom: 6vh;
-  text-align: center ;
+  text-align: center;
 }
 
 
@@ -170,9 +171,9 @@ h1 {
   grid-area: feature-project;
   background-image: url(../images/02-portfolio-2.jpg);
   height: 30vh;
-  background-size:cover;
+  background-size: cover;
 
-  
+
 }
 
 #project2 {
@@ -186,7 +187,7 @@ h1 {
 }
 
 #project4 {
-  grid-area: project4 ;
+  grid-area: project4;
   background-image: url(../images/02-portfolio-3.jpg);
 
 }
@@ -201,13 +202,38 @@ h1 {
   background-image: url(../images/02-portfolio-3.jpg);
 }
 
+.contact-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
 #contact-heading {
   border-right: 2px solid green;
-
+  flex: 0 0 20%;
 }
-#contact-info {
-display: grid;
-justify-content: space-evenly;
-margin: 10px;
 
+#contact-info {
+  flex: 0 0 80%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+  #image-card {
+    right: 15%;
+    max-width: 65%;
+  }
+  
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  #contact-heading {
+    border-right: none;
+    border-bottom: 2px solid green;
+    text-align: center;
+    flex: 0 0 40%;
+    margin: auto;
+  }
 }
